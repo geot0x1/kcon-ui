@@ -61,7 +61,7 @@ jobs:
           /tmp/clean/bin/pip install dist/*.whl
           /tmp/clean/bin/kcon-ui --version
           /tmp/clean/bin/python -m kcon_ui --version
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: dist
           path: dist/
